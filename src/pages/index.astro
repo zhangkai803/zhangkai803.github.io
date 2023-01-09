@@ -1,0 +1,9 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../compoments/Greeting.jsx";
+const pageTitle = "Zhangkai";
+---
+<BaseLayout pageTitle={pageTitle}>
+	<h2>My personal site build with astro.</h2>
+	<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+</BaseLayout>
