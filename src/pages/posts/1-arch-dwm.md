@@ -3,8 +3,10 @@ layout: ../../layouts/MarkdownPostLayout.astro
 author: "k"
 pubDate: "2023-01-09"
 title: "Arch - DWM"
-tags: ["successes"]
+tags: ["arch", "linux", "dwm"]
 ---
+
+一个非常非常简略的 arch linux 安装回顾
 
 ## Arch
 
@@ -34,6 +36,8 @@ tags: ["successes"]
 - git clone git://git.suckless.org/dwm
 - make install
 - echo "exec dwm" >> ~/.xinitrc
+- git clone git://git.suckless.org/st
+- make install
 - startx
 
 ## yay
@@ -41,6 +45,7 @@ tags: ["successes"]
 - git clone
 - go env -w GOFLAGS="-buildvcs=false"
 - makepkg -si
+- 不知道为啥我就不能用 pacman 直接装呢
 
 ## sshd
 

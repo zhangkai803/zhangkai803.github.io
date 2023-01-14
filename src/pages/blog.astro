@@ -1,14 +1,12 @@
 ---
-import { formatList } from "astro/dist/runtime/server/render/util";
 import BlogPost from "../compoments/BlogPost.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const allPost = await Astro.glob("./posts/*.md")
-const pageTitle = "Blogs";
+const pageTitle = "文章目录";
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <h2>My Blogs</h2>
-    <p>This is where I will post about my journey learning Astro.</p>
+    <p>暂时不考虑分页或分组，有个教程自带的标签功能足够了，先好好维护标签</p>
     <ul>
-        {allPost.map(post => <BlogPost url={post.url} title={post.frontmatter.title}></BlogPost>)}
+        {allPost.map(post => <BlogPost url={post.url} title={"[" + post.frontmatter.pubDate + "] " + post.frontmatter.title}></BlogPost>)}
     </ul>
 </BaseLayout>
