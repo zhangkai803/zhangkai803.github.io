@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+# layout: ../../layouts/MarkdownPostLayout.astro
 author: "k"
 pubDate: "2023-01-09"
 title: "Yabai + skhd - Mac 环境下的平铺式桌面管理方案"
 tags: ["mac", "yabai", "skhd"]
+description: ""
 ---
 
 在 arch 上用 dwm 有点爽，mac 上找到平替

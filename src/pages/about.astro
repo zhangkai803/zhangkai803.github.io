@@ -1,27 +1,34 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "关于我";
+import Layout from '../layouts/BlogPost.astro';
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<Layout
+	title="About Me"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date('Nov 23 2022')}
+	updatedDate={new Date('Mar 10 2023')}
+	heroImage="/placeholder-about.jpg"
+>
+	封面是模板带的不是我
 	<h2>技术栈</h2>
 	<p>工作语言</p>
 	<ul>
-		<li>Python 第一语言，4 年经验，web 后端方向，不太喜欢爬虫和数据分析，遇到问题看文档会写</li>
-		<li>Go，1 年使用经验，写过几个项目，平时自己写一些小工具，代码量应该不到 1w 行</li>
-		<li>Nodejs 维护公司老项目，用得多了也就还行，web 后端技术栈应该还行</li>
+		<li>Python 第一语言，4 年经验，遇到问题看文档应该都能写，web 后端方向，不太喜欢爬虫和数据分析，喜欢简单直观的逻辑</li>
+		<li>Go，1 年+ 使用经验，写过几个公司项目，平时自己写一些小工具，代码量应该不到 1w 行</li>
+		<li>Nodejs 维护公司老项目，用得多了，web 后端技术栈应该还行</li>
 	</ul>
 	<p>其他语言</p>
 	<ul>
 		<li>ASM	看操作系统相关内容时试了一下，跟着书敲到 load kernel</li>
 		<li>C/C++ 一般是看算法题解，间歇性刷题，记不住，其他就是玩 Qt 的时候用到</li>
-		<li>Rust 在看这本书 <a href="https://doc.rust-lang.org/book/">https://doc.rust-lang.org/book/</a></li>
-		<li>Swift 跟教程玩了一阵</li>
-		<li>C# 没错就是 unity，程序员的游戏梦，2020MBP 13.3" 带不起 Unreal</li>
-		<li>.Net 没想到吧，我就是喜欢把环境装上试一试</li>
+		<li>Rust 在看这本书 <a href="https://doc.rust-lang.org/book/">https://doc.rust-lang.org/book/</a>，用 bracket-lib 写小游戏</li>
+		<li>Swift 跟教程玩了一阵，坐高铁时在 iPad 上玩 Swift Playground，挺有意思的推荐有经验的也去玩一下</li>
+		<li>C# 程序员的游戏梦吧，2020MBP 13.3" 带不起 Unreal</li>
+		<li>.Net 把环境装上试了一试，听闻是以性能为目标转型</li>
+		<li>GDScript 玩 godot4</li>
 	</ul>
 	<h2>工作经历</h2>
 	<p>在教育行业，一家小公司。工作了很久，没有跳过槽。</p>
 	<h2>教育经历</h2>
 	<p>本科</p>
-</BaseLayout>
+</Layout>

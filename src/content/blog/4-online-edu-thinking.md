@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+# layout: ../../layouts/MarkdownPostLayout.astro
 author: "k"
 pubDate: "2023-01-16"
 title: "在线教育行业我的一些总结"
 tags: ["thinking"]
+description: ""
 ---
 
 天下文章一大抄，在线教育行业或者叫泛知识行业，也是如此。大公司抄国外，小公司抄大公司，公司之间也互相抄，都是换汤不换药。

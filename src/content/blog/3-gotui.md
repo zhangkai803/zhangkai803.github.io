@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+# layout: ../../layouts/MarkdownPostLayout.astro
 author: "k"
 pubDate: "2023-01-13"
 title: "Go TUI 尝试"
 tags: ["go", "TUI"]
+description: ""
 ---
 
 之前写过一个查看集群日志的小工具，用 go 爬取公司内部平台的 websocket 消息流。

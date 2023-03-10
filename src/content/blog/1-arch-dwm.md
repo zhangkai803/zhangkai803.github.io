@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+# layout: ../../layouts/MarkdownPostLayout.astro
 author: "k"
 pubDate: "2023-01-09"
 title: "Arch - DWM"
 tags: ["arch", "linux", "dwm"]
+description: ""
 ---
 
 一个非常非常简略的 arch linux 安装回顾
