@@ -1,5 +1,4 @@
 ---
-# layout: ../../layouts/MarkdownPostLayout.astro
 author: "k"
 pubDate: "2023-01-16"
 title: "在线教育行业我的一些总结"
