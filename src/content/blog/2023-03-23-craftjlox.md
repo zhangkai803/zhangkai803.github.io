@@ -47,7 +47,7 @@ init_registers:
 
 第一步，扫描源代码，把它分解到最小粒度，得到一个序列。比如这样的代码：
 
-```lox
+```js
 var a = 1;
 print a;
 print "hello world";
@@ -55,7 +55,7 @@ print "hello world";
 
 我们会分解成这个样子：
 
-```text
+```python
 var -> 关键字 VAR
 空格 -> 略过
 a -> 变量
@@ -116,7 +116,7 @@ class Token {
 - 连字符 Token`= == > >= < <= ! != / //`
 - 字面量
 
-```text
+```python
 所有的数值 -> literal
 所有的字符串 -> string
 其他 -> identifier 标识符（可能和关键字冲突）
@@ -124,7 +124,7 @@ class Token {
 
 - 关键字
 
-```text
+```python
 var fun class
 super this
 print return
@@ -152,7 +152,7 @@ true false nil
 解析完 Token，我们知道了代码都由哪些部分组成，代码中都是合法的字符，下一步我们要检测语法。
 首先，该怎么表示语法，举个例子，定义方法时：
 
-```lox
+```js
 fun funName(param1, param2) {
     print param1;
     print param2;
@@ -162,7 +162,7 @@ fun funName(param1, param2) {
 
 这几行代码的 Token 会是这样（忽略空格）：
 
-```text
+```python
 关键字 fun
 一个标识符 funName
 左括号
@@ -322,7 +322,7 @@ class Environment {
 变量拿到之后，我们开始实现功能，在语义已经十分明确的基础上，这一步水到渠成：
 比如我们的输入代码是：
 
-```lox
+```js
 print 123;
 ```
 
@@ -368,7 +368,7 @@ private executePrintStmt(Stmt.Print stmt) {
 这是一个最后引入的组件，但是它其实是在 Interpreter 之前的流程。它的主要作用是在语义层面上，去检测、实现并优化代码，并且可以在进入运行时之前就发现问题。
 比如：
 
-```lox
+```js
 print a;
 var a = 1;
 ```
@@ -376,7 +376,7 @@ var a = 1;
 这是两行语法正常的代码，但是它有很明显的语义缺陷，在变量定义之前就先发生了访问。
 比如：
 
-```lox
+```js
 class A {
     printA() {
         print this;
@@ -405,5 +405,7 @@ class A {
 ## 一些链接
 
 书 <https://craftinginterpreters.com/>，往下滑有可以免费在线阅读
+
 源码 <https://github.com/zhangkai803/jlox>
+
 书的中文译本 <https://github.com/GuoYaxiang/craftinginterpreters_zh>
