@@ -6,33 +6,36 @@ import Layout from '../layouts/BlogPost.astro';
 	title="About Me"
 	description="Lorem ipsum dolor sit amet"
 	pubDate={new Date('Nov 23 2022')}
-	updatedDate={new Date('Mar 10 2023')}
+	updatedDate={new Date('Mar 25 2024')}
 	heroImage="/placeholder-about.jpg"
 >
-	封面是模板带的不是我
 	<h2>我</h2>
-	<p>开源拥护者，喜欢 Linux 但是平时用 OSX，陷于颜值，工作安排的电脑性能并不出色，在 wine 环境下很多软件的体验也没有达到我能接受的程度</p>
+	<p>开源拥护者，喜欢 Linux 但是平时用 OSX，陷于颜值，在 Linux + wine 环境下很多软件的体验没有达到我能接受的程度</p>
 	<p>最喜欢的发行版是 Arch，yay 永远滴神</p>
-	<p>好奇心较强，各种技术都想试一试，有点广撒网，但是没捞着什么鱼</p>
-	<p>曾经的 DDD 推行者，但是在当前公司体验极差，个人不想介入管理层去扯皮，领导重心也不在此，所以现在对于系统设计我只看重可读性与是否优雅</p>
+	<p>好奇心较强，各种技术都想试一试，有点广撒网</p>
+	<p>曾经的 DDD 推行者，现在对于系统设计我更看重可读性与是否优雅</p>
 	<h2>技术栈</h2>
 	<h4>工作语言</h4>
 	<ul>
 		<li>
 			<p>Python</p>
-			第一语言，4 年经验，遇到问题看文档应该都能写，web 后端方向，喜欢简单直观的逻辑
+			第一语言，5 年经验，遇到问题看文档应该都能写，web 后端方向，喜欢简单直观的逻辑
 		</li>
 		<li>
 			<p>Go</p>
-			1 年多使用经验，写过几个公司项目，平时自己写一些小工具，代码量应该不到 1w 行
+			1 年多使用经验，写过几个公司项目，平时自己写一些小工具，代码量不到 1w 行
 		</li>
 		<li>
 			<p>Node</p>
-			维护公司老项目，用得多了，web 后端技术栈应该还行
+			维护公司老项目
 		</li>
 	</ul>
 	<h4>其他语言</h4>
 	<ul>
+		<li>
+			<p>Rust</p>
+			在看这本书 <a href="https://doc.rust-lang.org/book/">https://doc.rust-lang.org/book/</a>，给 <a href="https://github.com/salvo-rs/salvo">salvo</a> 做一些贡献（enhancement/tests/docs），用 <a href="https://github.com/iced-rs/iced">iced</a> 写桌面工具
+		</li>
 		<li>
 			<p>ASM</p>
 			看操作系统相关内容时试了一下，跟着书用 bochs 敲到 load kernel，用的 Intel 语法，后来看 linux0.11 源码时却是 AT&T :)
@@ -40,10 +43,6 @@ import Layout from '../layouts/BlogPost.astro';
 		<li>
 			<p>C/C++</p>
 			一般是看算法题解，间歇性刷题，记不住，其他就是玩 Qt 的时候用到，想给自己写的一个日志工具套一层 GUI
-		</li>
-		<li>
-			<p>Rust</p>
-			在看这本书 <a href="https://doc.rust-lang.org/book/">https://doc.rust-lang.org/book/</a>，用 bracket-lib 写小游戏
 		</li>
 		<li>
 			<p>Swift</p>
