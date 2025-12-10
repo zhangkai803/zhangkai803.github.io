@@ -1,6 +1,6 @@
 ---
 author: "k"
-pubDate: "2026-08-28"
+pubDate: "2025-08-28"
 title: "Deepseek 眼中的代码之禅"
 tags: ["programing language"]
 description: ""
